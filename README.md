@@ -6,6 +6,14 @@ This application is a single-activity Android app that allows users to load, vie
 
 ---
 
+## Technologies
+
+* Language: Kotlin
+* Minimum SDK: 24
+* UI Framework: Android Views (XML)
+* 3D Library: SceneView (built on top of Google Filament)
+
+
 ## 3D Library Used
 
 **SceneView (built on top of Google Filament)**
@@ -71,11 +79,3 @@ If additional development time were available, the following enhancements would 
 * Device-specific launcher animation errors may appear in Logcat on some OEM devices (OPPO/Realme/OnePlus); these are system launcher issues and do not affect application functionality.
 
 ---
-
-## Technologies
-
-* Kotlin
-* Android SDK
-* SceneView
-* Google Filament
-* View-based UI (XML)

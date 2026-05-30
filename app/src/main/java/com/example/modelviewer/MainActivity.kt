@@ -191,15 +191,17 @@ class MainActivity : AppCompatActivity() {
                     scaleToUnits = 1.0f
                 )
 
+                val spacing = 0.8f
+
                 modelNode.position = Float3(
                     0f,
-                    0f,
+                    -(models.size * spacing),
                     -4f
                 )
 
-                sceneView.cameraNode.lookAt(
-                    modelNode.position
-                )
+                if (models.isEmpty()) {
+                    sceneView.cameraNode.lookAt(modelNode.position)
+                }
 
                 sceneView.addChildNode(modelNode)
 
@@ -276,8 +278,7 @@ class MainActivity : AppCompatActivity() {
                 overlayView.elevation = 12f
 
                 overlayView.x = 24f
-                overlayView.y = 80f + (models.size * 90)
-
+                overlayView.y = 80f + (models.size * 140)
                 models.add(modelData)
 
                 selectedModel = modelData
